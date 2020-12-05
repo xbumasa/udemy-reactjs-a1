@@ -2,7 +2,10 @@ import React from 'react';
 
 const userInput = (props) => {
   return (
-    <div class="UserInput"></div>
+    <div class="UserInput">
+      <label>Username:</label>
+      <input type="text" value="" />
+    </div>
   );
 }
 
