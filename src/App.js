@@ -6,9 +6,9 @@ const app = () => {
   return (
     <div className="App">
       <UserInput/>
-      <UserOutput/>
-      <UserOutput/>
-      <UserOutput/>
+      <UserOutput userName="UserA" />
+      <UserOutput userName="UserB" />
+      <UserOutput userName="UserC" />
     </div>
   );
 }
