@@ -16,7 +16,7 @@ const App = props => {
   
   return (
     <div className="App">
-      <UserInput change={UsernameHandler} />
+      <UserInput change={UsernameHandler} current={usersState.username}/>
       <UserOutput userName={usersState.username} />
       <UserOutput userName={usersState.username} />
       <UserOutput userName="SEMION SHULMAN" />
