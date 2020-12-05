@@ -1,10 +1,16 @@
 import React from 'react';
 
 const UserInput = props => {
+  const css = {
+    color: 'red',
+    fontWeight: 'bold',
+    border: '2px solid #eee'
+  };
+  
   return (
     <div class="UserInput">
       <label>Username:</label>
-      <input type="text" value={props.current} onChange={props.change}/>
+      <input style={css} type="text" value={props.current} onChange={props.change}/>
     </div>
   );
 }
