@@ -8,15 +8,15 @@ const App = props => {
     username: 'XBUMASA'
   });
   
-  const UsernameHandler = () => {
+  const UsernameHandler = (event) => {
     setUserState({
-      username: 'XBUMASA'
+      username: event.target.value
     })
   }
   
   return (
     <div className="App">
-      <UserInput/>
+      <UserInput change={UsernameHandler} />
       <UserOutput userName={usersState.username} />
       <UserOutput userName={usersState.username} />
       <UserOutput userName="SEMION SHULMAN" />
