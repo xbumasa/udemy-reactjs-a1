@@ -1,6 +1,6 @@
 import React from 'react';
 
-const userInput = (props) => {
+const UserInput = props => {
   return (
     <div class="UserInput">
       <label>Username:</label>
@@ -9,4 +9,4 @@ const userInput = (props) => {
   );
 }
 
-export default userInput;
+export default UserInput;
