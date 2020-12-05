@@ -6,14 +6,20 @@ import UserOutput from './UserOutput/UserOutput';
 const App = props => {
   const [usersState, setUserState] = useState({
     username: 'XBUMASA'
-  })
+  });
+  
+  const UsernameHandler = () => {
+    setUserState({
+      username: 'XBUMASA'
+    })
+  }
   
   return (
     <div className="App">
       <UserInput/>
       <UserOutput userName={usersState.username} />
       <UserOutput userName={usersState.username} />
-      <UserOutput userName={usersState.username} />
+      <UserOutput userName="SEMION SHULMAN" />
     </div>
   );
 }
